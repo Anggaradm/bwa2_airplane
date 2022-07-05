@@ -1,5 +1,6 @@
 import 'package:bwa2_airplane/ui/pages/bonus_page.dart';
 import 'package:bwa2_airplane/ui/pages/get_started_page.dart';
+import 'package:bwa2_airplane/ui/pages/main_page.dart';
 import 'package:bwa2_airplane/ui/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 import 'ui/pages/splash_page.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/get-started': (context) => GetStartedPage(),
         '/sign-up': (context) => SignUpPage(),
         '/bonus': (context) => BonusPage(),
+        '/main': (context) => MainPage(),
       },
     );
   }
