@@ -1,3 +1,5 @@
+import 'package:bwa2_airplane/ui/pages/choose_seat.dart';
+import 'package:bwa2_airplane/ui/widgets/custom_button.dart';
 import 'package:bwa2_airplane/ui/widgets/interest_item.dart';
 import 'package:bwa2_airplane/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
@@ -219,6 +221,53 @@ class DetailPage extends StatelessWidget {
                 ],
               ),
             ),
+
+            // note: price & book button
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.symmetric(
+                vertical: 30.0,
+              ),
+              child: Row(
+                children: [
+                  // note: price
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'IDR 2.500.000',
+                          style: blackTextStyle.copyWith(
+                            fontSize: 18,
+                            fontWeight: medium,
+                          ),
+                        ),
+                        Text(
+                          'per orang',
+                          style: greyTextStyle.copyWith(
+                            fontWeight: light,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // note: book Button
+                  CustomButton(
+                    title: 'Book Now',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ChooseSeat(),
+                        ),
+                      );
+                    },
+                    width: 170,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       );
@@ -226,12 +275,14 @@ class DetailPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: kBackgroundColor,
-      body: Stack(
-        children: [
-          backgroundImage(),
-          customShadow(),
-          content(),
-        ],
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            backgroundImage(),
+            customShadow(),
+            content(),
+          ],
+        ),
       ),
     );
   }
