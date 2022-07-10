@@ -1,4 +1,4 @@
-import 'package:bwa2_airplane/ui/pages/choose_seat.dart';
+import 'package:bwa2_airplane/ui/pages/choose_seat_page.dart';
 import 'package:bwa2_airplane/ui/widgets/custom_button.dart';
 import 'package:bwa2_airplane/ui/widgets/interest_item.dart';
 import 'package:bwa2_airplane/ui/widgets/photo_item.dart';
@@ -259,7 +259,7 @@ class DetailPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ChooseSeat(),
+                          builder: (context) => ChooseSeatPage(),
                         ),
                       );
                     },
