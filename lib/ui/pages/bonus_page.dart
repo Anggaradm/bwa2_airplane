@@ -130,10 +130,7 @@ class BonusPage extends StatelessWidget {
           top: 50.0,
         ),
         onPressed: () {
-          Navigator.pushNamed(
-            context,
-            '/main',
-          );
+          Navigator.pushNamedAndRemoveUntil(context, '/main', (route) => false);
         },
       );
     }
