@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254030164769",
+    "project_id": "airplane-e3de4",
+    "storage_bucket": "airplane-e3de4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254030164769:android:c9e987b1e4865e588cc460",
+        "android_client_info": {
+          "package_name": "com.radm.bwa2_airplane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254030164769-ls38t00pum4rdrns9cvdu8u6c01f4m5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6BH_PkAA5_ZwHJdFa9VgtZDuYHG95UAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254030164769-ls38t00pum4rdrns9cvdu8u6c01f4m5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
